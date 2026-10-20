@@ -2226,19 +2226,6 @@ wheels = [
 ]
 
 [[package]]
-name = "linkpreview"
-version = "0.13.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "beautifulsoup4" },
-    { name = "requests" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/79/5f/c845ee23c09a4d6d3d27a0193f0f47d20c73858bcaf55e0556195bd96bf0/linkpreview-0.13.2.tar.gz", hash = "sha256:4a8ecce7142de2753a31a96b84048dcf4f5ea1f787ec2984101994ce3d916b0a", size = 16488, upload-time = "2026-10-14T23:46:00.866Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/87/da/4934194da81d15ad29a6b95e0272f283fe67eebeb06a6dafcfe17f1919b5/linkpreview-0.13.2-py3-none-any.whl", hash = "sha256:aa30254ba30621f878fdb49f7151fc57ace125a1877b49f4317db1d4672ae011", size = 22767, upload-time = "2026-10-14T23:45:59.676Z" },
-]
-
-[[package]]
 name = "litellm"
 version = "1.106.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2788,35 +2775,6 @@ wheels = [
 ]
 
 [[package]]
-name = "neonize"
-version = "0.5.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "httpx" },
-    { name = "linkpreview" },
-    { name = "phonenumbers" },
-    { name = "pillow", version = "12.3.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "pillow", version = "13.0.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
-    { name = "protobuf" },
-    { name = "python-magic", marker = "sys_platform != 'win32'" },
-    { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
-    { name = "requests" },
-    { name = "segno" },
-    { name = "tqdm" },
-]
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/a5/316bdcd25baf2300c34ab88efb13def89ba4f0b828d965f5df74fdbb57af/neonize-0.5.2-py310-none-macosx_12_0_arm64.whl", hash = "sha256:670376f5479c56da35fce80ba3c0f98540a46d77364b04f4a6405f6dda783617", size = 6416550, upload-time = "2026-09-21T13:43:03.891Z" },
-    { url = "https://files.pythonhosted.org/packages/74/fb/ee1011d67def59535feb15b92d21a66f113af3a6c77a51567ef2390c7f74/neonize-0.5.2-py310-none-macosx_12_0_x86_64.whl", hash = "sha256:7065552a7d4acfb7327f845ba176f887125a20578d5bfafb683ecb870d12c41b", size = 6846474, upload-time = "2026-09-21T13:43:05.579Z" },
-    { url = "https://files.pythonhosted.org/packages/ec/54/be02d1f3eabdb8f7659f16d0ac7c28b75f78bd36fdf151117b33dd49dd7e/neonize-0.5.2-py310-none-manylinux2014_aarch64.whl", hash = "sha256:258fc41a72b60854255815c697ea24db14d96d6205d10e9524db3318615e3ca3", size = 6633761, upload-time = "2026-09-21T13:43:07.175Z" },
-    { url = "https://files.pythonhosted.org/packages/b9/8d/1924d19e45ec54528fd5d7223e8319cecf944d50cd8e617ba711af31a543/neonize-0.5.2-py310-none-manylinux2014_i686.whl", hash = "sha256:96ea2eb144064a5ae7667709021f4b9515e1206f163c267349ecbc531369ecdc", size = 9686381, upload-time = "2026-09-21T13:43:08.867Z" },
-    { url = "https://files.pythonhosted.org/packages/50/c0/db72411b2fb31cc4db7393287696ae38e3c1f4a076140a13ff09b453750a/neonize-0.5.2-py310-none-manylinux2014_s390x.whl", hash = "sha256:bc0874e3abaab520433b9456b020c973885353af1caa2a73c0c71e866973e3ce", size = 7128076, upload-time = "2026-09-21T13:43:10.587Z" },
-    { url = "https://files.pythonhosted.org/packages/9d/21/5230e201176c1d405bb291dda66bb31efe85f78ac02ef60bc2a6f634990b/neonize-0.5.2-py310-none-manylinux2014_x86_64.whl", hash = "sha256:d737efc03d3a4db0a89d1efac3b55199472eb57acda041927ca8efc797872b69", size = 7143133, upload-time = "2026-09-21T13:43:12.842Z" },
-    { url = "https://files.pythonhosted.org/packages/8c/76/02fe7ce9b734b1fe015d0973c3c0153d0555fe86b3fcd46020eb6e56ccc8/neonize-0.5.2-py310-none-win32.whl", hash = "sha256:a4630048fe0e13a8d460bf128e46ae10845a4ae8ce4fafa2a0bf5669db696a87", size = 6973448, upload-time = "2026-09-21T13:43:14.887Z" },
-    { url = "https://files.pythonhosted.org/packages/1f/d6/6d63715700c0cb5ea4525c8328ae58700bfa7723f8b57212301fae5835a7/neonize-0.5.2-py310-none-win_amd64.whl", hash = "sha256:08fa22aac7b8b6b66f2f53195cb12fa990685c89bd99a0ff17f346a0b4f4710a", size = 7044777, upload-time = "2026-09-21T13:43:16.614Z" },
-    { url = "https://files.pythonhosted.org/packages/04/88/a643ca2cbc18100d5b5495d57b8b7a3b584a8ce52cb3f15317380ca26569/neonize-0.5.2-py310-none-win_arm64.whl", hash = "sha256:9baeac04b085aa8e47a2c866fad9908a185097246a49ddac288d2825b2d08d2e", size = 6411652, upload-time = "2026-09-21T13:43:18.833Z" },
-]
-
-[[package]]
 name = "nest-asyncio2"
 version = "1.7.4"
 source = { registry = "https://pypi.org/simple" }
@@ -3333,15 +3291,6 @@ wheels = [
 ]
 
 [[package]]
-name = "phonenumbers"
-version = "9.0.41"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2f/df/cc0d70f1c79e436ea00d935b6352053d526252b81ce6c130d39eee846fb2/phonenumbers-9.0.41.tar.gz", hash = "sha256:dfa6f74eeac67c044b75313fe0af10774d7d1e1242241437279d4c2fb8027c01", size = 2311017, upload-time = "2026-10-08T10:51:09.778Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/60/1a/4059026e9c8a4c3faeab4a45f5aa67fb77d1f0d9c767085ded69c5c533e2/phonenumbers-9.0.41-py2.py3-none-any.whl", hash = "sha256:ccf2ea44f8aa35c487f26146a31520ecedf8e1af1f57c803678ecb5ef5c01668", size = 2594658, upload-time = "2026-10-08T10:51:07.317Z" },
-]
-
-[[package]]
 name = "pillow"
 version = "12.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3760,21 +3709,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d4/ef/8bae0a316d406644450522f2f3d44a4e19632f5f3bb60d1d0e6c53842616/propcache-0.5.4-cp315-cp315t-win_amd64.whl", hash = "sha256:02c0a34f16889cf800f10f0247a564d8ce6eeab6ffcd7c87198f769067eb8432", size = 48574, upload-time = "2026-09-16T00:17:10.077Z" },
     { url = "https://files.pythonhosted.org/packages/57/be/bcc053f66a97355683884b448198e79580fae8e8fa4d96b9bb01614e9913/propcache-0.5.4-cp315-cp315t-win_arm64.whl", hash = "sha256:dc4242ca653c9b30ab51c5f8193323e7bc0928f897ee9103201e59a43abcb72e", size = 45625, upload-time = "2026-09-16T00:17:11.377Z" },
     { url = "https://files.pythonhosted.org/packages/f5/cd/785c64ed382f3f04201870267b02783f63b4678c2acfddc177a3ebcc2727/propcache-0.5.4-py3-none-any.whl", hash = "sha256:62c60aec739ed00124573cce1178138fd690c7676352d67a37328c1cf51d7468", size = 16338, upload-time = "2026-09-16T00:17:13.106Z" },
-]
-
-[[package]]
-name = "protobuf"
-version = "7.36.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/d9/89/5b8517baa72f84a67b8a307ba953c91057af618bf40bf676f3c03551f8f0/protobuf-7.36.2.tar.gz", hash = "sha256:497d0463ff3316681da6c0b9e8d06cb465d61abce00b613ab42226175644d1bb", size = 512737, upload-time = "2026-09-17T20:07:59.326Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/72/98342feb672507c8f3a69e34b4fa8961f608edba5c1a48a6f47156d92cb5/protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl", hash = "sha256:cbc70b17ee27e28894c7fee8bb04be1abead49e936bc70eb60052531eee2079e", size = 456039, upload-time = "2026-09-17T20:07:51.542Z" },
-    { url = "https://files.pythonhosted.org/packages/b6/ea/91fdf7c2b8bbd49cde056f00a9df6773532987e1c00fe2830b895af95c7e/protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl", hash = "sha256:e11e1f0180583a2af89db6a2ecd9e8dc40aa6d2988ca175bfd0e6d12ea72d74e", size = 344219, upload-time = "2026-09-17T20:07:52.914Z" },
-    { url = "https://files.pythonhosted.org/packages/17/ab/5fd5f8ece73fad885c5a09aa849b32d70472f954ba3a92d3bb5974ea953b/protobuf-7.36.2-cp310-abi3-manylinux2014_s390x.whl", hash = "sha256:f4fee11ec330d238b34a05c9b675f693c20415d1c5bd7d5320cc2f8a798eb9cf", size = 357223, upload-time = "2026-09-17T20:07:53.985Z" },
-    { url = "https://files.pythonhosted.org/packages/db/f3/3996583dd2906297a637af12114deddf7658af6e683fedb83be061983fb5/protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl", hash = "sha256:89f23aa53c24553a2416fd4fd1ec06f74fa42b14b546d8883128813f775bbfd2", size = 343223, upload-time = "2026-09-17T20:07:54.931Z" },
-    { url = "https://files.pythonhosted.org/packages/fc/1b/dcc64f358fcb51811b58ae40b3d28f820725f116d86487cc20bd4b130701/protobuf-7.36.2-cp310-abi3-win32.whl", hash = "sha256:912c1221170e16c08d1f086762f563dd61ff83c18b5fa6652952dfaded66f728", size = 442998, upload-time = "2026-09-17T20:07:55.826Z" },
-    { url = "https://files.pythonhosted.org/packages/8a/55/b77bda4e5e5f5971fb51b07663694690e9afdb9402136c16a522bd621cad/protobuf-7.36.2-cp310-abi3-win_amd64.whl", hash = "sha256:a300819d441e078a5608c0d3c709796bb548136058fda017ae51d425b44fd353", size = 456514, upload-time = "2026-09-17T20:07:57.188Z" },
-    { url = "https://files.pythonhosted.org/packages/e4/04/d52c7016b04b6c5108f26691f9d33ec82a9b65d041f1a9c771137693d618/protobuf-7.36.2-py3-none-any.whl", hash = "sha256:bdb3a345d48db958e6ce1f18e508beb0cc981d64f24088427549c866cd039f1e", size = 179806, upload-time = "2026-09-17T20:07:58.211Z" },
 ]
 
 [[package]]
@@ -4357,24 +4291,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/cb/58/6e554f8a0a36f8a5bb6f3d186d42af46ccc7af275dc467ac55f4269d04fa/python_levenshtein-0.27.5.tar.gz", hash = "sha256:b01ad92a8e775bae997b60758fb7acc65c8bbd3f77892190616ddc86073c10bd", size = 9374, upload-time = "2026-09-12T20:22:47.226Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4a/2c/9bcea060eb5231d33ca753e6e6a7c2fa42cbfd068a1cbb46f8b1f62d9d14/python_levenshtein-0.27.5-py3-none-any.whl", hash = "sha256:da716ff072204e2a6432c68bd9ff92c3e7f1202e4a908640717f191dbb482693", size = 9503, upload-time = "2026-09-12T20:22:46.41Z" },
-]
-
-[[package]]
-name = "python-magic"
-version = "0.4.27"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/da/db/0b3e28ac047452d079d375ec6798bf76a036a08182dbb39ed38116a49130/python-magic-0.4.27.tar.gz", hash = "sha256:c1ba14b08e4a5f5c31a302b7721239695b2f0f058d125bd5ce1ee36b9d9d3c3b", size = 14677, upload-time = "2022-06-07T20:16:59.508Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/6c/73/9f872cb81fc5c3bb48f7227872c28975f998f3e7c2b1c16e95e6432bbb90/python_magic-0.4.27-py2.py3-none-any.whl", hash = "sha256:c212960ad306f700aa0d01e5d7a325d20548ff97eb9920dcd29513174f0294d3", size = 13840, upload-time = "2022-06-07T20:16:57.763Z" },
-]
-
-[[package]]
-name = "python-magic-bin"
-version = "0.4.14"
-source = { registry = "https://pypi.org/simple" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/5a/5d/10b9ac745d9fd2f7151a2ab901e6bb6983dbd70e87c71111f54859d1ca2e/python_magic_bin-0.4.14-py2.py3-none-win32.whl", hash = "sha256:34a788c03adde7608028203e2dbb208f1f62225ad91518787ae26d603ae68892", size = 397784, upload-time = "2017-10-02T16:30:15.806Z" },
-    { url = "https://files.pythonhosted.org/packages/07/c2/094e3d62b906d952537196603a23aec4bcd7c6126bf80eb14e6f9f4be3a2/python_magic_bin-0.4.14-py2.py3-none-win_amd64.whl", hash = "sha256:90be6206ad31071a36065a2fc169c5afb5e0355cbe6030e87641c6c62edc2b69", size = 409299, upload-time = "2017-10-02T16:30:18.545Z" },
 ]
 
 [[package]]
@@ -5371,15 +5287,6 @@ wheels = [
 ]
 
 [[package]]
-name = "segno"
-version = "1.6.6"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1c/2e/b396f750c53f570055bf5a9fc1ace09bed2dff013c73b7afec5702a581ba/segno-1.6.6.tar.gz", hash = "sha256:e60933afc4b52137d323a4434c8340e0ce1e58cec71439e46680d4db188f11b3", size = 1628586, upload-time = "2025-03-12T22:12:53.324Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d6/02/12c73fd423eb9577b97fc1924966b929eff7074ae6b2e15dd3d30cb9e4ae/segno-1.6.6-py3-none-any.whl", hash = "sha256:28c7d081ed0cf935e0411293a465efd4d500704072cdb039778a2ab8736190c7", size = 76503, upload-time = "2025-03-12T22:12:48.106Z" },
-]
-
-[[package]]
 name = "shellingham"
 version = "1.5.4"
 source = { registry = "https://pypi.org/simple" }
@@ -6050,7 +5957,7 @@ wheels = [
 [[package]]
 name = "windows-use"
 version = "0.8.1"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/Jeomon/Windows-Use?rev=main#582a5669e9251372beb63baf39dac453693ff0d8" }
 dependencies = [
     { name = "anthropic" },
     { name = "cerebras-cloud-sdk" },
@@ -6069,7 +5976,6 @@ dependencies = [
     { name = "litellm" },
     { name = "markdownify" },
     { name = "mistralai" },
-    { name = "neonize" },
     { name = "ollama" },
     { name = "openai" },
     { name = "pillow", version = "12.3.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
@@ -6079,6 +5985,7 @@ dependencies = [
     { name = "pydantic" },
     { name = "pynacl" },
     { name = "pysignalclirestapi" },
+    { name = "pytest-asyncio" },
     { name = "python-dotenv" },
     { name = "python-levenshtein", version = "0.27.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "python-levenshtein", version = "0.27.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -6094,10 +6001,6 @@ dependencies = [
     { name = "typer" },
     { name = "uuid7" },
     { name = "websockets" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/37/96/f87361fc1287baa0135462151cae91211136d29034251455c73b82c3596a/windows_use-0.8.1.tar.gz", hash = "sha256:11b99a912aba32178a9f33fad792064b2add0600e2e4fd1d4a893f5af699d5aa", size = 189529, upload-time = "2026-04-30T06:51:11.664Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/44/0d/c8a30a4a1f9db42805a4b6a68f2fdac19e417ca4c718684b408f09b0c39c/windows_use-0.8.1-py3-none-any.whl", hash = "sha256:378d189adb52ea3af572bde662c6e7cea8669b6dd34153bdd63f2316ae60a347", size = 240748, upload-time = "2026-04-30T06:51:13.239Z" },
 ]
 
 [[package]]
@@ -6119,7 +6022,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "mcp", specifier = ">=2.0.0" },
-    { name = "windows-use", specifier = ">=0.8.1" },
+    { name = "windows-use", git = "https://github.com/Jeomon/Windows-Use?rev=main" },
 ]
 
 [package.metadata.requires-dev]

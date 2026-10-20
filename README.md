@@ -31,8 +31,15 @@ providers that run out of credits mid-task.
 ## 📦 Install
 
 ```powershell
-uv sync          # or: pip install -e .
+uv sync          # or: pip install .
 ```
+
+The agent itself is pulled straight from GitHub rather than from PyPI, because
+`windows-use` 0.8.1 on PyPI cannot be imported: its mistral provider does
+`from mistralai import Mistral`, and `mistralai` 2.x and 3.x are namespace
+packages that no longer export that name at the top level. The fix is on
+`main` (commit `144a053`) but has not been released yet. Once it is, this
+dependency becomes a plain `windows-use>=0.8.2`.
 
 You also need an LLM. Any OpenAI-compatible endpoint works.
 
@@ -171,6 +178,5 @@ uv pip install -e ../Windows-Use
 ```
 
 ## 📄 License
-
 MIT — see [LICENSE](LICENSE). The `windows-use` package it wraps is MIT
 licensed by Jeomon George.

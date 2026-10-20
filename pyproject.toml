@@ -9,7 +9,12 @@ requires-python = ">=3.10"
 keywords = ["windows", "mcp", "model-context-protocol", "automation", "gui", "agent", "desktop"]
 dependencies = [
     "mcp>=2.0.0",
-    "windows-use>=0.8.1",
+    # windows-use 0.8.1 on PyPI cannot be imported: its mistral provider does
+    # `from mistralai import Mistral`, and mistralai 2.x and 3.x are namespace
+    # packages that no longer export that name at the top level. The fix is on
+    # main (Jeomon/Windows-Use commit 144a053). Swap this for
+    # "windows-use>=0.8.2" once a release containing the fix is published.
+    "windows-use @ git+https://github.com/Jeomon/Windows-Use@main",
 ]
 
 [project.scripts]
@@ -21,6 +26,10 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/windows_use_mcp"]
+
+[tool.hatch.metadata]
+# windows-use is depended on as a direct git reference, see dependencies above.
+allow-direct-references = true
 
 [dependency-groups]
 dev = [
